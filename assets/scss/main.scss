@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto+Slab:wght@100..900&display=swap&family=VT323");
+// @import "./variable";
+// @import "./mixins";
+
+// Global Style
+
+// ::-moz-selection {
+//   background-color: darken($theme-color, 8);
+//   color: $white;
+// }
+// ::selection {
+//   background-color: darken($theme-color, 8);
+//   color: $white;
+// }
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba($theme-color, 0.05);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: $theme-color;
+  border-radius: 10px;
+}
+
+// Page transition
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+  filter: blur(1rem);
+  // transition: all 0.3s ease;
+}
+
+.router-link-active,
+.router-link-exact-active {
+  font-weight: bold;
+  color: $theme-color !important;
+}
+
+/* exact link will show the primary color for only the exact matching link */
+// .nuxt-link-exact-active {
+//   color: #00c58e;
+// }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  position: relative;
+  background-color: $background-color;
+  color: $text-variant-1;
+  font-family: "Roboto Slab", sans-serif;
+  margin: 0;
+}
+
+//font styling
+.text-kaushan {
+  font-family: "Kaushan Script", "Roboto Slab", sans-serif;
+}
+
+.text-vt323 {
+  font-family: "VT323", sans-serif;
+}
+
+.router-link,
+a {
+  text-decoration: none;
+}
+
+.custom-btn {
+  color: $text-variant-1;
+  padding: 12px 30px;
+  border-radius: 0;
+  border-color: $theme-color;
+  transition: $transition;
+  background-color: $background-color;
+  &:hover {
+    border-color: $background-color;
+    color: $theme-color;
+    background-color: $background-color;
+    box-shadow: 0 0.5rem 1rem rgba($theme-color, 0.15);
+  }
+}

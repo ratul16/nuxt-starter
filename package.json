@@ -1,5 +1,8 @@
 {
-  "name": "atmos-remake",
+  "name": "nuxt3-starter-template",
+  "author": {
+    "name": "Hasibul Alam Ratul"
+  },
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,14 +15,14 @@
   "dependencies": {
     "@primevue/themes": "^4.0.4",
     "nuxt": "^3.12.4",
-    "pinia": "^2.2.0",
+    "pinia": "^2.2.1",
     "primeflex": "^3.3.1",
     "primeicons": "^7.0.0",
     "vue": "latest"
   },
   "devDependencies": {
     "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
-    "@pinia/nuxt": "^0.5.2",
+    "@pinia/nuxt": "^0.5.3",
     "@primevue/nuxt-module": "^4.0.2",
     "@vueuse/nuxt": "^10.11.0",
     "sass": "^1.77.8"

@@ -4,9 +4,6 @@ import { resolve } from 'path'
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  imports: {
-    autoImport: true, // Ensure this is set to true
-  },
   components: [
     {
       path: '~/components',
@@ -35,7 +32,7 @@ export default defineNuxtConfig({
   },
 
   pinia: {
-    storesDirs: ['@stores/**'],
+    storesDirs: ['~/stores/**',],
   },
 
   vite: {
@@ -52,6 +49,10 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
+    key: "Will be accessible only by both client and server",
+    private: {
+      secret: "Api key which will be accessible only by server"
+    }
   },
 
   app: {

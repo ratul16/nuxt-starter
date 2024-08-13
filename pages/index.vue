@@ -1,17 +1,13 @@
 <template>
   <div>
-    <HelloWorld />
+    <HelloWorld :message="name" />
+    {{ data.data }}
   </div>
 </template>
 
 <script setup>
-const search = ref("");
-const weather = ref(null);
-
-const fetchWeather = async () => {
-  let searchQuery = `weather?q=${search.value}`;
-  console.log(searchQuery);
-  const response = await fetch(`/api/weather?query=${searchQuery}`);
-  weather.value = await response.json();
-};
+// import { useGlobalStore } from "~/stores/global";
+// const global = useGlobalStore();
+const name = "Nuxt 3 Starter Template";
+const { data } = await useFetch("/api/users");
 </script>

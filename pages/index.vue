@@ -1,11 +1,13 @@
 <template>
   <div>
-    <HelloWorld :message="name" />
+    <HelloWorld :message="global.appName" />
+    <!-- <p>
+      {{ global.getAuthor }}
+    </p> -->
   </div>
 </template>
 
 <script setup>
-// import { useGlobalStore } from "~/stores/global";
-// const global = useGlobalStore();
-const name = "Nuxt 3 Starter Template";
+import { useGlobalStore } from "~/store/global";
+const global = useGlobalStore();
 </script>

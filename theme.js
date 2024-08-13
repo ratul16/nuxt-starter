@@ -33,10 +33,10 @@ const CustomTheme = definePreset(Theme, {
       },
       dark: {
         primary: {
-          color: '{blue.50}',
+          color: '{blue.200}',
           inverseColor: '{blue.950}',
-          hoverColor: '{blue.100}',
-          activeColor: '{blue.200}',
+          hoverColor: '{blue.400}',
+          activeColor: '{blue.300}',
         },
         highlight: {
           background: 'rgba(250, 250, 250, .16)',

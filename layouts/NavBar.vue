@@ -14,10 +14,22 @@
       </a>
     </template>
     <template #end>
-      <div class="flex items-center gap-2">
+      <div class="flex align-items-center gap-2">
+        <Button
+          icon="pi pi-github"
+          rounded
+          raised
+          size="small"
+          severity="contrast"
+          as="a"
+          href="https://github.com/ratul16/nuxt3-starter-template"
+          target="_blank"
+          rel="noopener"
+        />
         <Button
           :icon="isDarkMode ? 'pi pi-moon' : 'pi pi-sun'"
           rounded
+          raised
           size="small"
           @click="toggleTheme"
         />

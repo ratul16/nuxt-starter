@@ -1,9 +1,7 @@
 <template>
   <div>
     <HelloWorld :message="global.appName" />
-    <!-- <p>
-      {{ global.getAuthor }}
-    </p> -->
+    <!-- <ProductView /> -->
   </div>
 </template>
 

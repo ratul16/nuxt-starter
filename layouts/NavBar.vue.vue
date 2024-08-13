@@ -40,9 +40,9 @@ const items = ref([
     route: "/",
   },
   {
-    label: "Features",
-    icon: "pi pi-star",
-    route: "/about",
+    label: "Users",
+    icon: "pi pi-users",
+    route: "/users",
   },
   {
     label: "Projects",

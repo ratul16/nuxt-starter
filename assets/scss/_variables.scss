@@ -1,8 +1,7 @@
 //Color palette
-$theme-color: #dc3545;
+$theme-color: var(--p-primary-color);
 $background-color: #1d1d22;
 $foreground-color: #212328;
-$highlight: #9e2a2b;
 
 // Common color
 $white: #fff;

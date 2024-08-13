@@ -1,7 +1,7 @@
 export const useGlobalStore = defineStore('global', {
   state: () => ({
     appName: 'Nuxt 3 Stater Project Template',
-    theme: 'dark',
+    theme: 'light',
   }),
   getters: {
 

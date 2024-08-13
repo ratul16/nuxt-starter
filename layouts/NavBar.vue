@@ -27,11 +27,11 @@
           rel="noopener"
         />
         <Button
-          :icon="isDarkMode ? 'pi pi-moon' : 'pi pi-sun'"
+          :icon="isDark ? 'pi pi-sun' : 'pi pi-moon'"
           rounded
           raised
           size="small"
-          @click="toggleTheme"
+          @click="toggleTheme()"
         />
       </div>
     </template>
@@ -39,11 +39,7 @@
 </template>
 
 <script setup>
-const isDarkMode = ref(false);
-
-const toggleTheme = () => {
-  isDarkMode.value = !isDarkMode.value;
-};
+const { isDark, toggleTheme } = useTheme();
 
 const items = ref([
   {

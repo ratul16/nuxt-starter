@@ -1,7 +1,7 @@
 import { definePreset } from '@primevue/themes';
-import Aura from '@primevue/themes/aura';
+import Theme from '@primevue/themes/aura';
 
-const Noir = definePreset(Aura, {
+const CustomTheme = definePreset(Theme, {
   semantic: {
     primary: {
       50: '{blue.50}',
@@ -50,7 +50,7 @@ const Noir = definePreset(Aura, {
 });
 
 export default {
-  preset: Noir,
+  preset: CustomTheme,
   options: {
     darkModeSelector: '.p-dark',
   },
